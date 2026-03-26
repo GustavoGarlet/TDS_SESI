@@ -17,7 +17,7 @@ console.log (`O item ${produto.nome} custa R$${produto.preco}`);
         console.log("Disponibilidade: não tem em estoque")
     }
 
-//testes
+//Desconto
 let desconto = 0.50
 let precoDesconto;
 
