@@ -9,7 +9,7 @@ function exibir(horaAtual, nome) {
         console.log(`Bom dia ${nome}!!`);
     }
 }
-exibir(30, "Gustavo")
+exibir(30, "Gustavo");
 
 
 
