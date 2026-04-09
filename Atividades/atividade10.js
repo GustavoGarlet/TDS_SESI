@@ -12,5 +12,3 @@ nome.push("mouse attack shark x11");
 
 console.log(nome[2])
 
-
-//c
