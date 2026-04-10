@@ -1,13 +1,8 @@
-const lista = {
-    nome: "Gustavo",
-    nome: "Jorge",
-    nome: "Lucas",
-    nome: "João",
-    nome: "Simone",
-    nome: "Eloa",
-    nome: "Maria",
-    nome: "sarah"
-}
-console.log()
+const lista = ["Gustavo","Jorge","Lucas","João","Simone","Eloa","Maria","sarah"]
 
+if (lista.includes("torto")){
+    console.log("Usuário encontrado no sistema");
+} else {
+    console.log("Usuário localizado");
+}
 
