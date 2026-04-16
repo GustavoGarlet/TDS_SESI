@@ -13,13 +13,13 @@ let vendapossivel;
 
 //função do desconto
 function processarVenda(valorTotal, cupomAtivo,) {
-    let valorFinal = valorTotal>500||cupomAtivo==true ? valorTotal=valorTotal*0.85 : valorTotal;//se o valor for maior que 500 aplicar desconto se tiver cupom 
+    let valorFinal = valorTotal > 500 || cupomAtivo == true ? valorTotal = valorTotal * 0.85 : valorTotal;//se o valor for maior que 500 aplicar desconto se tiver cupom 
     
     return valorTotal;
 } 
 console.log(`R$${processarVenda(valorTotal, possuiCumpom)}`);//exibindo o retunr da função.
 
-if (clienteIdade>=16) {
+if (clienteIdade >= 16) {
     console.log(`venda autorizada para ${clienteNomes}`);
        vendapossivel = true
 } else {
@@ -30,11 +30,11 @@ if (clienteIdade>=16) {
 console.log("\n")
 //exibindo o estoque 
 if (vendapossivel == true) {
-for (let i = 0; i<produtoscomprados; i++) {
+for (let i = 0; i < produtoscomprados; i++) {
     console.log(`despachando item: ${estoque[i]}... OK!`);
 }
 
-for (let i = 0; i<produtoscomprados; i++) {
+for (let i = 0; i < produtoscomprados; i++) {
     estoque.shift()
 }
 
