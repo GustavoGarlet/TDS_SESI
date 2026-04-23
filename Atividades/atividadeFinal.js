@@ -1,6 +1,6 @@
-const estoque = ["ram", "plcaDeVideo", "processador", "placaMae", "monitor"];//estoque com produtos
+const estoque = ["ram", "plcaDeVideo", "processador", "placaMae", "monitor"]; //estoque com produtos
 
-estoque.push("fonte");//adicionando um produto ao estoque
+estoque.push("fonte"); //adicionando um produto ao estoque
 
 //variaveis declaradas
 let produtoscomprados = 4
@@ -12,12 +12,12 @@ let valorTotal = 1001;
 let vendapossivel;
 
 //função do desconto
-function processarVenda(valorTotal, cupomAtivo,) {
-    let valorFinal = valorTotal > 500 || cupomAtivo == true ? valorTotal = valorTotal * 0.85 : valorTotal;//se o valor for maior que 500 aplicar desconto se tiver cupom 
+function processarVenda(valorTotal, cupomAtivo) {
+    let valorFinal = valorTotal > 500 || cupomAtivo == true ? valorTotal = valorTotal * 0.85 : valorTotal; //se o valor for maior que 500 aplicar desconto se tiver cupom 
     
     return valorTotal;
 } 
-console.log(`R$${processarVenda(valorTotal, possuiCumpom)}`);//exibindo o retunr da função.
+console.log(`R$${processarVenda(valorTotal, possuiCumpom)}`); //exibindo o retunr da função.
 
 if (clienteIdade >= 16) {
     console.log(`venda autorizada para ${clienteNomes}`);
